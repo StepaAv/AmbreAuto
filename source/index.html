@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Ambre Auto</title>
+  <title>Ambre Auto</title>
 </head>
+
 <body>
-	<header class="page-header page-header--index">
+  <header class="page-header page-header--index">
     <div class="container">
       <div class="page-header__container">
-        <a href="#" class="page-header__logo"><img src="http://placehold.it/300x30" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Menu</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a>Home</a></li>
-              <li class="site-list__item"><a href="about.html">Apie mus</a></li>
-              <li class="site-list__item"><a href="cars.html">automobiliai</a></li>
-              <li class="site-list__item"><a href="decor.html">Dekoracijos</a></li>
-              <li class="site-list__item"><a href="contacts.html">kontaktai</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="page-header__logo-wrap">
+          <a href="#" class="page-header__logo-link"><img class="page-header__image" src="http://www.text2image.com/user_images/text2image_Z37775_20180805_140442.jpg" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+        </div>
+        <div class="page-header__menu-wrap">
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a>Home</a></li>
+                <li class="site-list__item"><a href="about.html">Apie mus</a></li>
+                <li class="site-list__item"><a href="cars.html">automobiliai</a></li>
+                <li class="site-list__item"><a href="decor.html">Dekoracijos</a></li>
+                <li class="site-list__item"><a href="contacts.html">kontaktai</a></li>
+              </ul>
+              <button class="menu-button main-nav__toggle" type="button">Menu</button>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-  </header>	
+  </header>
   <main class="page-main page-main--index">
     <div class="container">
       <section class="about-us">
@@ -35,27 +41,33 @@
       <section class="features">
         <div class="features__block features__block--cars">
           <a href="#" class="features__link features__link--cars">
-            <img src="https://picsum.photos/200/300" alt="#" class="features__photo features__photo--cars">
+            <img src="img/test.jpg" alt="#" class="features__photo features__photo--cars">
           </a>
           <h2 class="features__title">Automobiliai</h2>
           <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur corporis suscipit possimus distinctio beatae eaque voluptates maxime ipsum. Ducimus!</p>
           <a href="#" class="button-link button-link--cars features__button">Placiau</a>
         </div>
         <div class="features__block features__block--decor">
-          <a href="#" class="features__link features__link--decor">
-            <img src="https://picsum.photos/200/300" alt="#" class="features__photo features__photo--decor">
+          <div class="features__link-wrap">
+            <a href="#" class="features__link features__link--decor">
+          </div>
+            <img src="img/test.jpg" alt="#" class="features__photo features__photo--decor">
           </a>
           <h2 class="features__title">Papapuosimai</h2>
           <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur corporis suscipit possimus distinctio beatae eaque voluptates maxime ipsum. Ducimus!</p>
           <a href="#" class="button-link button-link--decor features__button">Placiau</a>
         </div>
         <div class="features__block features__block--contacts">
-          <a href="#" class="features__link features__link--contacts">
-            <img src="https://picsum.photos/200/300" alt="#" class="features__photo features__photo--contacts">
+          <div class="features__link-wrap">
+            <a href="#" class="features__link features__link--contacts">
+          </div>
+            <img src="img/test.jpg" alt="#" class="features__photo features__photo--contacts">
           </a>
           <h2 class="features__title">Kontaktai</h2>
           <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur corporis suscipit possimus distinctio beatae eaque voluptates maxime ipsum. Ducimus!</p>
-          <a href="#" class="button-link button-link--contacts features__button">Placiau</a>
+          <div class="features__link-wrap">
+            <a href="#" class="button-link button-link--contacts features__button">Placiau</a>
+          </div>
         </div>
       </section>
     </div>
@@ -84,4 +96,5 @@
     </div>
   </footer>
 </body>
+
 </html>
