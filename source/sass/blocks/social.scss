@@ -1,0 +1,23 @@
+.social {
+  background-color: rgb(238, 238, 238);
+  min-height: 80px;
+}
+
+.social__svg {
+  fill: black;
+  &:hover {
+    fill: #5c5c5c;
+  }
+}
+
+.social__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+

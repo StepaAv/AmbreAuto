@@ -10,65 +10,78 @@
 	<header class="page-header page-header--index">
     <div class="container">
       <div class="page-header__container">
-        <a href="#" class="page-header__logo"><img src="http://placehold.it/300x30" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Menu</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a href="index.html">Home</a></li>
-              <li class="site-list__item"><a href="about.html">Apie mus</a></li>
-              <li class="site-list__item"><a href="cars.html">automobiliai</a></li>
-              <li class="site-list__item"><a href="decor.html">Dekoracijos</a></li>
-              <li class="site-list__item site-list__item--active"><a>kontaktai</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="page-header__logo-wrap">
+          <a href="#" class="page-header__logo-link"><img class="page-header__image" src="img/logo.png" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+        </div>
+        <div class="page-header__menu-wrap">
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item"><a href="index.html">Titulinis</a></li>
+                <li class="site-list__item"><a href="about.html">Apie mus</a></li>
+                <li class="site-list__item"><a href="cars.html">automobiliai</a></li>
+                <li class="site-list__item"><a href="decor.html">Dekoracijos</a></li>
+                <li class="site-list__item site-list__item--active"><a>kontaktai</a></li>
+              </ul>
+              <button class="menu-button main-nav__toggle" type="button">Menu</button>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-  </header>	
+  </header>
   <main class="page-main page-main--cars">
     <div class="container">
      <section class="contacts">
-       <p class="contacts__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nemo, nostrum culpa labore fugit expedita saepe nobis in a possimus distinctio, quis at ullam provident blanditiis quas! Quas, iusto magni ad. Veritatis sit sequi similique commodi, natus et facere cum.</p>
-       <form method="post" action="#" class="form">
+       <p class="contacts__info">Neatidėliodami skambinkite ar parašykite žinutę, jei norite rezervuoti C6, suderinti nuomos laiką, turite klausimų, pasiūlymų ar tiesiog paprasčiausiai norėtumėte pasakyti Labas.</p>
+       <ul class="contacts__list">
+         <li class="contacts__item contacts__item--loc">Lietuva</li>
+         <li class="contacts__item contacts__item--num">+370 67604676</li>
+         <li class="contacts__item contacts__item--mail">mb.vestuvems@gmail.com</li>
+       </ul>
+       <form method="post" action="https://echo.htmlacademy.ru" class="form">
        <div class="form__connection">
            <ul class="form__list">
            <li class="form__item">
-             <p class="form__label">Vardas:</p>
-               <input type="text" placeholder="bla bla *" name="name" class="form__input">
+             <p class="form__label">Vardas*</p>
+               <input type="text" name="name" class="form__input">
            </li>
            <li class="form__item">
-             <p class="form__label">Tel Numeris:</p>
-               <input type="tel" placeholder="Bla bla bla *" name="mobile" class="form__input">
+             <p class="form__label">Telefonas*</p>
+               <input type="tel" name="mobile" class="form__input">
            </li>
            <li class="form__item">
-             <p class="form__label">Pastas:</p>
-              <input type="email" placeholder="Bla bla bla bla *" name="email" class="form__input">
+             <p class="form__label">El. paštas*</p>
+              <input type="email" name="email" class="form__input">
+           </li>
+           <li class="form__item">
+             <p class="form__label">Miestas*</p>
+              <input type="text" name="city" class="form__input">
            </li>
          </ul>
        </div>
        <div class="form__wishes">
-         <p class="form__legend">Jusu pageidavimai:</p>
-         <textarea name="review" placeholder="blablabla bla" cols="30" rows="10" class="form__textarea"></textarea>
+         <p class="form__legend">Pageidavimai*</p>
+         <textarea name="review" cols="30" rows="10" class="form__textarea"></textarea>
        </div>
        <div class="form__date">
-        <p class="form__date-title">iveskite data:</p>
+        <p class="form__date-title">Data*</p>
          <ul class="form__list">
            <li class="form__item">
+             <input type="number" min="2018" step="1" name="year" required class="form__input">
              <p class="form__label">Metai</p>
-             <input type="number" min="2018" step="1" value="2018" required class="form__input">
            </li>
            <li class="form__item">
-             <p class="form__label">Menuo</p>
-             <input type="text" class="form__input">
+             <input type="number" min="1" max="12" name="month" class="form__input">
+             <p class="form__label">Mėnuo</p>
            </li>
            <li class="form__item">
+             <input type="number" min="1" max="31" name="day" class="form__input">
              <p class="form__label">Diena</p>
-             <input type="number" min="1" max="31" class="form__input">
            </li>
          </ul>
        </div>
-       <button class="submit-button form__submit" type="submit">Submit</button>
+       <button class="submit-button form__submit" type="submit">Siųsti</button>
        </form>
      </section>
     </div>

@@ -1,0 +1,35 @@
+.contacts__info {
+  text-align: center;
+  color: grey;
+  font-weight: 300;
+  line-height: 1.8em;
+  font-size: 14px;
+  margin: 0 0 1.8em;
+}
+
+.contacts__list {
+  list-style-type: none;
+  padding: 0;
+  width: 320px;
+  min-height: 120px;
+}
+
+.contacts__item {
+  margin-bottom: 7px;
+  color: grey;
+  font-weight: 600;
+  line-height: 1.8em;
+  font-size: 14px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.contacts__item--loc {
+  &:before {
+    content: url("../img/place-marker.png") ;
+    width: 10%;
+    height: 10%;
+    background-size: 10px;
+    // display: block;
+  }
+}
