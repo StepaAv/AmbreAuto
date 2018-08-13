@@ -1,5 +1,4 @@
 .social {
-  background-color: rgb(238, 238, 238);
   min-height: 80px;
 }
 
@@ -17,7 +16,13 @@
   justify-content: space-around;
   padding: 0;
   margin-bottom: 0;
-  padding-top: 20px;
+}
+
+.social__hr {
+   border-bottom: 1px solid #5c5c5c;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 

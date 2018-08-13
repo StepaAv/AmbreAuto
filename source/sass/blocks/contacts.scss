@@ -11,7 +11,7 @@
   list-style-type: none;
   padding: 0;
   width: 320px;
-  min-height: 120px;
+  margin-bottom: 0px;
 }
 
 .contacts__item {
@@ -24,12 +24,14 @@
   position: relative;
 }
 
-.contacts__item--loc {
+.contacts__item {
   &:before {
-    content: url("../img/place-marker.png") ;
-    width: 10%;
-    height: 10%;
-    background-size: 10px;
-    // display: block;
+    content: "\25bd";
+    padding-right: 5px;
   }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: grey;
 }
